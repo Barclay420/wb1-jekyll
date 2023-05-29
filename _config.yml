@@ -1,0 +1,12 @@
+title: Barclay 
+first_name: Zeb
+last_name: Barclay
+email: zeb.barclay@gmail.com
+
+descripsion: >-
+  a simple, whitespace theme for academis. based on [*folio]()
+footer_text: >-
+  powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+ 
+plugins:
+  - jekyll-feed

@@ -1,0 +1,18 @@
+{% include head.html %}
+    <div class="news">
+        <h1>news</h1>
+  
+        {% for post in site.posts reversed %}
+        <div class="posts">
+
+          <h2>{{ post.title }}</h2>
+          <p>{{post.date | date_to_string}}</p>
+          {{ post.content }}
+
+          <a href="post.url">continue redaing</a>
+          <hr    width="50%">
+      </div>
+          
+        {% endfor %}   
+      </div>
+ {% include footer.html %}

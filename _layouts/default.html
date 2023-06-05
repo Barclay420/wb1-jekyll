@@ -7,12 +7,11 @@
 
           <h2>{{ post.title }}</h2>
           <p>{{post.date | date_to_string}}</p>
-          {{ post.content }}
+          {{ post.content | truncate: 1000 "..."}}
 
-          <a href="post.url">continue redaing</a>
-          <hr    width="50%">
-      </div>
-          
+      </div >
+      <a href="{{post.url}}">continue redaing</a>
+      <hr    width="50%">  
         {% endfor %}   
       </div>
  {% include footer.html %}
